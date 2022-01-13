@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,45 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Задание 1</title>
 </head>
+
 <body>
     <!--БЛОК 1-->
-    <div>
-        <table width="100%">
-            <tr>
-                <td>
-                    <img src="img/logo-black.png" alt="logo">
-                </td>
-                <td align="right">DECEMBER 2021</td>
-            </tr>
-        </table>
-        <img src="img/human.png" alt="human">
-    <div id="block1">
-        <h1>CHOOSE FLUTTER TO CHOOSE BOTH</h1>
-        <button>REGISTER</button>
-    </div>
+    <header>
+        <div class="head">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <img src="img/logowhite.png" alt="logo" />
+                    </td>
+                    <td align="right">DECEMBER 2021</td>
+                </tr>
+            </table>
+        </div>
+
+        <img src="img/human.png" class="imgbg" alt="human" />
+        <div class="logoTel">
+            <div class="log1">
+                <img src="img/apple.png" class="apple" alt="apple" />
+                <p>IOS</p>
+            </div>
+            <div class="log1">
+                 <img src="img/android.png" class="android" alt="android" />
+                 <p>Android</p>
+            </div>
+       
+
+        </div>
+       
+        <div id="block1">
+
+            <h1><span class="st1">CHOOSE</span><b>FLUTTER</b><span class="st2">TO CHOOSE BOTH</span></h1>
+            <button>REGISTER</button>
+        </div>
+    </header>
     <!--БЛОК 2-->
     <div id="block2">
         <h2>WORKSHOP</h2>
+        <button class="but1">REGISTER</button>
         <p>We're launching a series of practical workshops on development in January 2020. We'll
             teach you how to know your way around software, share the latest news, and help to start.</p>
         <p>First workshop will familiarize you with cross-platform mobile development toolkit called
@@ -54,14 +75,16 @@
     <!--БЛОК 4-->
     <div id="block4">
         <h2>WHO</h2>
-        <table border="1" width="38%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-color:#ef8c46">
-            <caption style="font-size:18px; text-align: left;"><b>Цены на флагманские модели iPhone и Xiaomi</b></caption>
+        <table border="1" width="38%" cellpadding="0" cellspacing="0"
+            style="border-collapse: collapse; border-color:#ef8c46">
+            <caption style="font-size:18px; text-align: left;"><b>Цены на флагманские модели iPhone и Xiaomi</b>
+            </caption>
             <thead style="border-top:6px solid #ef8c46">
-               <tr>
-                <th>Производитель</th>
-                <th>Модель</th>
-                <th>Цена</th>
-            </tr> 
+                <tr>
+                    <th>Производитель</th>
+                    <th>Модель</th>
+                    <th>Цена</th>
+                </tr>
             </thead>
             <tbody align="center">
                 <tr>
@@ -93,7 +116,7 @@
                     <td align="center"><b>$758.8</b></td>
                 </tr>
             </tfoot>
-            
+
         </table>
         <button>Register</button>
     </div>
@@ -121,4 +144,5 @@
             obcaecati perferendis quia quis soluta totam unde vero.</p>
     </div>
 </body>
+
 </html>

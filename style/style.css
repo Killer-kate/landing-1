@@ -5,15 +5,107 @@
     box-sizing: border-box;
 }
 
+/* Шрифты */
+@font-face {
+    font-family: 'FiraSans';
+    /* Гарнитура шрифта */
+    src: local(FiraSans), url(../fonts/Fira_Sans/Fira_Sans/FiraSans-Black.ttf);
+    /* Для остальных браузеров */
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    /* Гарнитура шрифта */
+    src: local(OpenSans), url(../fonts/opensans/OpenSans-Bold.ttf);
+    /* Для остальных браузеров */
+}
+
+@font-face {
+    font-family: 'Sourse Sans Pro';
+    /* Гарнитура шрифта */
+    src: local(SourseSansPro), url(../fonts/sourcesanspro/SourceSansPro-Black.otf);
+    /* Для остальных браузеров */
+}
+
+
+header {
+    background-image: url("../img/fon/bg1.jpg");
+    width: 1440px;
+    height: 794px;
+    position: relative;
+}
+
+.head {
+    width: 1440px;
+    padding: 55px 127px 0 130px;
+}
+
+.head img {
+    width: 121px;
+    height: 45px;
+}
+
+.head td {
+    font-size: 19px;
+    color: white;
+}
+
 /* Тело сайта */
 body {
+    width: 1440px;
     font-size: 16px;
     color: #4A4A4A;
+    margin: 0 auto;
+}
+
+.imgbg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 1072px;
+
+}
+
+h1 {
+    color: white;
+    width: 514px;
+    text-align: center;
+}
+
+h1 b {
+    width: 499px;
+    font-size: 128px;
+    font-family: 'FiraSans';
+    line-height: 90px;
+    font-weight: 800px;
+    float: left;
+}
+
+h1 .st1 {
+    font-family: 'Open Sans';
+    width: 499px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 76px;
+    letter-spacing: 50px;
+    float: left;
+}
+
+h1 .st2 {
+    width: 499px;
+    font-family: 'FiraSans';
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 16px;
 }
 
 #block1 {
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
-    color: #ffffff;
+    width: 1072px;
+    height: 828px;
+    position: absolute;
+    top: 365px;
+    left: 485px;
 }
 
 #block1 h1 {
@@ -22,6 +114,20 @@ body {
     font-size: 56px;
     text-align: center;
     text-transform: uppercase;
+}
+
+#block1 button {
+    display: block;
+    margin: 63px 0 0 150px;
+    width: 186px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    font-weight: 800;
+    font-size: 17px;
+    color: #4A4A4A;
+    font-family: 'Open Sans';
+    cursor: pointer;
 }
 
 h2 {
@@ -38,4 +144,65 @@ h2 {
 
 #block3 h2, #block5 h2 {
     color: #ffffff;
+}
+
+.logoTel {
+    width: 1065px;
+    height: 188px;
+    position: absolute;
+    top: 228px;
+    left: 188px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.log1 img {
+    width: 94px;
+    height: 116px;
+}
+
+.log1 img~.log1 img {
+    width: 99px;
+    height: 114px;
+}
+
+.log1 p {
+    color: white;
+    font-family: 'Sourse Sans Pro';
+    width: 95px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#block2 {
+    position: relative;
+}
+
+#block2 h2 {
+    width: 230px;
+    height: 36px;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 6px;
+    margin: 0 auto;
+    color: #4A4A4A;
+    margin-top: 53px;
+}
+
+#block2 .but1 {
+    position: absolute;
+    left: 80.83%;
+    top: 6.69%;
+    width: 146px;
+    height: 46px;
+    border: 1px solid #4A4A4A;
+    box-sizing: border-box;
+    background-color: white;
+    font-family:'Open Sans';
+    font-weight:800;
+    font-size:14px;
+    cursor:pointer;
 }
