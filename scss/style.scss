@@ -1,0 +1,545 @@
+$color_standart:    #ffffff;
+%flex_pos_1{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;}
+%flex_pos_2{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;}
+%font_1{
+    font-family: 'Open Sans';
+	font-weight: 800;}
+%font_2{
+    font-family: 'FiraSans';
+	font-weight: 800;}
+%font_3{
+    font-family: 'Fira Sans';
+	font-weight: 800;}
+%font_4{
+    font-family: 'Fira Sans';
+	font-weight: 400;}
+/* Шрифты */
+@font-face {
+	font-family: 'FiraSans';
+	src: local(FiraSans), url(../fonts/Fira_Sans/Fira_Sans/FiraSans-Black.ttf);}
+/* Тело сайта */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;}
+header {
+	background-image: url("../img/fon/bg1.jpg");
+	width: 1440px;
+	height: 794px;
+	position: relative;}
+.head {
+	width: 1440px;
+	padding: 55px 127px 0 130px;
+	img {
+		width: 121px;
+		height: 45px;}
+	td {
+		font-size: 19px;
+		color: $color_standart;}}
+body {
+	width: 1440px;
+	font-size: 16px;
+	color: #4A4A4A;
+	margin: 0 auto;}
+.imgbg {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 1072px;}
+h1 {
+	color: $color_standart;
+	width: 514px;
+	text-align: center;
+	b {
+		width: 499px;
+		font-size: 128px;
+		font-family: 'FiraSans';
+		line-height: 90px;
+		font-weight: 800px;
+		float: left;}
+	.st1 {
+		font-family: 'Open Sans';
+		width: 499px;
+		font-weight: 700;
+		font-size: 56px;
+		line-height: 76px;
+		letter-spacing: 50px;
+		float: left;}
+	.st2 {
+		width: 499px;
+        @extend %font_3;
+		font-size: 36px;
+		line-height: 49px;
+		letter-spacing: 16px;}}
+#block1 {
+	width: 1072px;
+	height: 828px;
+	position: absolute;
+	top: 365px;
+	left: 485px;
+	h1 {
+		@extend %font_1;
+		font-size: 56px;
+		text-align: center;
+		text-transform: uppercase;}
+	button {
+		display: block;
+		margin: 63px 0 0 150px;
+		width: 186px;
+		height: 60px;
+		background-color: $color_standart;
+		border: none;
+        @extend %font_1;
+		font-size: 17px;
+		color: #4A4A4A;
+		cursor: pointer;
+		&:hover {
+			color: $color_standart;
+			cursor: pointer;
+			background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);}}}
+h2 {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 36px;
+	text-align: center;}
+#block2 {
+	h2 {
+		color: #000000;
+		width: 230px;
+		height: 36px;
+		@extend %font_4;
+		font-size: 36px;
+		line-height: 36px;
+		letter-spacing: 6px;
+		margin: 0 auto;
+		color: #4A4A4A;
+		margin-top: 53px;}
+	position: relative;
+	.cool {
+		width: 1300px;
+        @extend %flex_pos_1;
+		margin: 0 auto;}
+	.but1 {
+		width: 146px;
+		height: 46px;
+		border: 1px solid #4A4A4A;
+		box-sizing: border-box;
+		background-color: $color_standart;
+        @extend %font_1;
+		font-size: 14px;
+		cursor: pointer;
+		margin-top: 45px;}
+	.blockText {
+		margin: 111px 0 0 370px;
+		font-family: 'Source Sans Pro';
+		font-weight: 400;
+		font-size: 19px;
+		line-height: 24px;
+		color: #4A4A4A;
+		width: 680px;
+		height: 203px;
+		p {
+			padding-bottom: 10px;}}
+	button {
+		&:hover {
+			color: $color_standart;
+			cursor: pointer;
+			background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);}}}
+#block4 {
+	h2 {
+		color: #000000;}
+	.topFlex {
+		padding-top: 56px;
+		@extend %flex_pos_1;
+		h2 {
+			font-family: 'Fira Sans';
+			font-weight: 500;
+			font-size: 36px;
+			line-height: 36px;
+			letter-spacing: 6px;
+			color: #4A4A4A;}
+		p {
+			font-family: 'Source Sans Pro';
+			font-size: 19px;
+			line-height: 36px;
+			text-align: right;
+			text-transform: uppercase;
+			color: #4A4A4A;}}
+	button {
+		display: block;
+		margin: 0 auto;
+		margin-top: 62px;
+		width: 186px;
+		height: 66px;
+		background: linear-gradient(0deg, #FF7E03, #FF7E03);
+		border: none;
+        @extend %font_1;
+		font-size: 17px;
+		line-height: 23px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color_standart;
+		cursor: pointer;
+		margin-bottom: 69px;
+		&:hover {
+			color: $color_standart;
+			cursor: pointer;
+			background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);}}}
+#block6 {
+	h2 {
+		color: #000000;
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 36px;
+		text-align: center;
+		letter-spacing: 6px;
+		text-transform: uppercase;
+		color: #4A4A4A;}
+	.topFlex {
+		@extend %flex_pos_1;
+		padding-top: 47px;
+		padding-bottom: 105px;
+		.but1 {
+			width: 146px;
+			height: 46px;
+			background-color: $color_standart;
+			border: 1px solid black;
+            @extend %font_1;
+			font-size: 14px;
+			line-height: 19px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #4A4A4A;}}
+	p {
+		width: 940px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+		font-family: 'Source Sans Pro';
+		font-weight: 200;
+		font-size: 16px;
+		line-height: 24px;
+		color: #000000;}
+	.icons {
+		i {
+			color: #FF7E03;
+			padding-right: 10px;}
+		span {
+			font-family: 'Source Sans Pro';
+			font-size: 16px;
+			line-height: 20px;
+			vertical-align: middle;}}}
+#block3 {
+	h2 {
+		color: $color_standart;}
+	margin-top: 71px;
+	width: 1440px;
+	height: 794px;
+	background-image: url('../img/fon/bg2.jpg');
+	.topFlex {
+		h2 {
+			font-family: 'Fira Sans';
+			font-weight: 500;
+			font-size: 36px;
+			line-height: 36px;
+			text-align: center;
+			letter-spacing: 6px;}
+		padding-top: 53px;
+		padding-bottom: 88px;
+		@extend %flex_pos_1;}
+	div {
+		img {
+			width: 121px;
+			height: 45px;}}
+	.but2 {
+		width: 146px;
+		height: 46px;
+		border: 1px solid $color_standart;
+		box-sizing: border-box;
+		background-color: rgba(255, 255, 255, 0);
+        @extend %font_1;
+		font-size: 14px;
+		cursor: pointer;
+		color: $color_standart;}
+	.content {
+		width: 1108px;
+		height: 504px;
+		border: 1px solid $color_standart;
+		box-sizing: border-box;
+		margin: 0 auto;
+		@extend %flex_pos_1;
+		position: relative;
+		div {
+			display: flex;
+			flex-direction: column;}
+		img {
+			width: 18px;
+			height: 25px;}}
+	button {
+		&:hover {
+			color: $color_standart;
+			cursor: pointer;
+			background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);}}}
+#block5 {
+	h2 {
+		color: $color_standart;}
+	button {
+		&:hover {
+			color: $color_standart;
+			cursor: pointer;
+			background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);}
+		width: 186px;
+		height: 66px;
+		color: $color_standart;
+		border: none;
+        @extend %font_1;
+		font-size: 17px;
+		line-height: 23px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #4A4A4A;
+		margin: 0 auto;
+		display: block;
+		margin-top: 134px;}
+	width: 1440px;
+	height: 794px;
+	background-image: url('../img/fon/bg3.jpg');
+	.topFlex {
+		@extend %flex_pos_1;
+		padding-top: 58px;
+		h2 {
+			font-family: 'Fira Sans';
+			font-weight: 500;
+			font-size: 36px;
+			line-height: 36px;
+			letter-spacing: 6px;
+			text-transform: uppercase;}
+		p {
+			font-family: 'Source Sans Pro';
+			font-size: 19px;
+			line-height: 36px;
+			text-align: right;
+			text-transform: uppercase;
+			color: $color_standart;}}
+	.cooper {
+		margin: 0 auto;
+		margin-top: 132px;
+		width: 700px;
+		height: 125px;
+		font-family: 'Source Sans Pro';
+		font-size: 19px;
+		line-height: 24px;
+		text-align: justify;
+		color: $color_standart;}}
+.logoTel {
+	width: 1065px;
+	height: 188px;
+	position: absolute;
+	top: 228px;
+	left: 188px;
+	@extend %flex_pos_2;}
+.log1 {
+	img {
+		width: 94px;
+		height: 116px;}
+	img~.log1 {
+		img {
+			width: 99px;
+			height: 114px;}}
+	p {
+		color: $color_standart;
+		font-family: 'Sourse Sans Pro';
+		width: 95px;
+		text-align: center;
+		font-size: 24px;}}
+.cool {
+	img {
+		width: 121px;
+		height: 45px;
+		margin-top: 40px;
+		margin-left: 40px;}}
+.peopleFlex {
+	width: 1440px;
+	@extend %flex_pos_1;
+	div {
+		width: 341px;
+		position: relative;
+		h3 {
+			text-align: center;
+            @extend %font_2;
+			margin: 10px 0 23px 0;
+			font-size: 24px;
+			line-height: 29px;
+			color: #FF7E03;}
+		p {
+			font-family: 'Source Sans Pro';
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 24px;
+			color: #4A4A4A;}}
+	img {
+		margin: 0 auto;
+		display: block;}}
+.flex1 {
+	p {
+		@extend %font_4;
+		font-size: 17px;
+		line-height: 20px;
+		color: $color_standart;}
+	h2 {
+		color: blue;}
+	.hOne {
+		position: absolute;
+		top: 18px;
+		left: 69px;
+        @extend %font_3;
+		font-size: 48px;
+		line-height: 58px;
+		color: $color_standart;}
+	.pOne {
+		position: absolute;
+		top: 109px;
+		left: 71px;
+		@extend %font_4;
+		font-size: 17px;
+		line-height: 20px;}
+	.hTwo {
+		position: absolute;
+		top: 134px;
+		left: 72px;
+		font-family: 'Fira Sans';
+		font-weight: 700;
+		font-size: 36px;}
+	.pTwo {
+		position: absolute;
+		top: 181px;
+		left: 72px;
+		font-family: 'Fira Sans';
+		font-size: 17px;
+		line-height: 20px;
+		img {
+			margin-right: 5px;}}
+	.hThree {
+		position: absolute;
+		top: 256px;
+		left: 69px;
+        @extend %font_3;
+		font-size: 48px;
+		line-height: 58px;}
+	.pThree {
+		position: absolute;
+		top: 344px;
+		left: 69px;
+		font-family: 'Source Sans Pro';
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: 13.2778px;}
+	.pFour {
+		position: absolute;
+		top: 362px;
+		left: 69px;
+		font-family: 'Source Sans Pro';
+		font-weight: bold;
+		font-size: 96px;
+		line-height: 121px;}}
+.flex2 {
+	p {
+		@extend %font_4;
+		font-size: 17px;
+		line-height: 20px;
+		color: $color_standart;}
+	.hOne {
+		position: absolute;
+		top: 18px;
+		left: 611px;
+        @extend %font_3;
+		font-size: 48px;
+		line-height: 58px;}
+	.pOne {
+		position: absolute;
+		top: 107px;
+		left: 611px;
+		font-family: 'Fira Sans';
+		font-size: 17px;
+		line-height: 24px;}
+	.pTwo {
+		position: absolute;
+		top: 140px;
+		left: 611px;
+		font-family: 'Fira Sans';
+		font-size: 17px;
+		line-height: 24px;}
+	.hTwo {
+		position: absolute;
+		top: 344px;
+		left: 610px;
+		font-family: 'Source Sans Pro';
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: 17.7778px;}
+	.pThree {
+		position: absolute;
+		top: 362px;
+		left: 610px;
+		font-family: 'Source Sans Pro';
+		font-weight: bold;
+		font-size: 96px;
+		line-height: 121px;}}
+.emoji {
+	width: 1200px;
+	margin-left: 100px;
+	margin-top: 54px;
+	@extend %flex_pos_1;
+	h3 {
+		font-family: 'Fira Sans';
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 38px;
+		color: $color_standart;}
+	p {
+		font-family: 'Source Sans Pro';
+		font-size: 19px;
+		line-height: 24px;
+		text-decoration-line: underline;
+		color: $color_standart;
+		margin-left: 30px;
+		margin-top: 16px;}}
+.flexFoot {
+	button {
+		width: 206px;
+		height: 46px;
+		border: none;
+		background-color: #FF7E03;
+        @extend %font_1;
+		font-size: 14px;
+		line-height: 19px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color_standart;}
+	margin-top: 114px;
+	@extend %flex_pos_1;}
+.flexInfo {
+	@extend %flex_pos_2;
+	margin: 0 auto;
+	width: 1440px;
+	margin-top: 141px;
+	p {
+		width: 100px;}
+	.spans2 {
+		font-family: 'Source Sans Pro';
+		font-size: 20px;
+		line-height: 25px;
+		text-align: right;
+		color: #FF7E03;}}
+.spans1 {
+	font-family: 'Source Sans Pro';
+	font-size: 15px;
+	line-height: 19px;
+	color: black;}
