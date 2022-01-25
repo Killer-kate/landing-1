@@ -1,92 +1,84 @@
-/* Обнуление */
-* {
+#block2 .cool, #block4 .topFlex, #block6 .topFlex, #block3 .topFlex, #block3 .content, #block5 .topFlex, .peopleFlex, .emoji, .flexFoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logoTel, .flexInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #block1 h1, #block1 button, #block2 .but1, #block4 button, #block6 .topFlex .but1, #block3 .but2, #block5 button, .flexFoot button {
+    font-family: 'Open Sans';
+    font-weight: 800;
+  }
+  .peopleFlex div h3 {
+    font-family: 'FiraSans';
+    font-weight: 800;
+  }
+  h1 .st2, .flex1 .hOne, .flex1 .hThree, .flex2 .hOne {
+    font-family: 'Fira Sans';
+    font-weight: 800;
+  }
+  #block2 h2, .flex1 p, .flex1 .pOne, .flex2 p {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+  }
+  /* Шрифты */
+  @font-face {
+    font-family: 'FiraSans';
+    src: local(FiraSans), url(../fonts/Fira_Sans/Fira_Sans/FiraSans-Black.ttf);
+  }
+  /* Тело сайта */
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-/* Шрифты */
-@font-face {
-    font-family: 'FiraSans';
-    /* Гарнитура шрифта */
-    src: local(FiraSans), url(../fonts/Fira_Sans/Fira_Sans/FiraSans-Black.ttf);
-    /* Для остальных браузеров */
-}
-
-/*
-@font-face {
-    font-family: 'Open Sans';
-    Гарнитура шрифта
-    src: local(OpenSans), url(../fonts/opensans/OpenSans-Bold.ttf);
-    Для остальных браузеров
-}
-
-@font-face {
-    font-family: 'Sourse Sans Pro';
-    Гарнитура шрифта
-    src: local(SourseSansPro), url(../fonts/sourcesanspro/SourceSansPro-Black.otf);
-    Для остальных браузеров
-} */
-
-
-
-
-
-
-header {
+  }
+  header {
     background-image: url("../img/fon/bg1.jpg");
     width: 1440px;
     height: 794px;
     position: relative;
-}
-
-.head {
+  }
+  .head {
     width: 1440px;
     padding: 55px 127px 0 130px;
-}
-
-.head img {
+  }
+  .head img {
     width: 121px;
     height: 45px;
-}
-
-.head td {
+  }
+  .head td {
     font-size: 19px;
-    color: white;
-}
-
-/* Тело сайта */
-body {
+    color: #ffffff;
+  }
+  body {
     width: 1440px;
     font-size: 16px;
     color: #4A4A4A;
     margin: 0 auto;
-}
-
-.imgbg {
+  }
+  .imgbg {
     display: block;
     margin: 0 auto;
     margin-top: 15px;
     width: 1072px;
-
-}
-
-h1 {
-    color: white;
+  }
+  h1 {
+    color: #ffffff;
     width: 514px;
     text-align: center;
-}
-
-h1 b {
+  }
+  h1 b {
     width: 499px;
     font-size: 128px;
     font-family: 'FiraSans';
     line-height: 90px;
     font-weight: 800px;
     float: left;
-}
-
-h1 .st1 {
+  }
+  h1 .st1 {
     font-family: 'Open Sans';
     width: 499px;
     font-weight: 700;
@@ -94,138 +86,76 @@ h1 .st1 {
     line-height: 76px;
     letter-spacing: 50px;
     float: left;
-}
-
-h1 .st2 {
+  }
+  h1 .st2 {
     width: 499px;
-    font-family: 'Fira Sans';
-    font-weight: 800;
     font-size: 36px;
     line-height: 49px;
     letter-spacing: 16px;
-}
-
-#block1 {
+  }
+  #block1 {
     width: 1072px;
     height: 828px;
     position: absolute;
     top: 365px;
     left: 485px;
-}
-
-#block1 h1 {
-    font-family: 'Open Sans';
-    font-weight: 800;
+  }
+  #block1 h1 {
     font-size: 56px;
     text-align: center;
     text-transform: uppercase;
-}
-
-#block1 button {
+  }
+  #block1 button {
     display: block;
     margin: 63px 0 0 150px;
     width: 186px;
     height: 60px;
-    background-color: white;
+    background-color: #ffffff;
     border: none;
-    font-weight: 800;
     font-size: 17px;
     color: #4A4A4A;
-    font-family: 'Open Sans';
     cursor: pointer;
-}
-
-h2 {
+  }
+  #block1 button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);
+  }
+  h2 {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 36px;
     text-align: center;
-    /* text-transform: uppercase; */
-}
-
-#block2 h2, #block4 h2, #block6 h2 {
-    color: #000000;
-}
-
-#block3 h2, #block5 h2 {
-    color: #ffffff;
-}
-
-.logoTel {
-    width: 1065px;
-    height: 188px;
-    position: absolute;
-    top: 228px;
-    left: 188px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.log1 img {
-    width: 94px;
-    height: 116px;
-}
-
-.log1 img~.log1 img {
-    width: 99px;
-    height: 114px;
-}
-
-.log1 p {
-    color: white;
-    font-family: 'Sourse Sans Pro';
-    width: 95px;
-    text-align: center;
-    font-size: 24px;
-}
-
-#block2 {
+  }
+  #block2 {
     position: relative;
-}
-
-#block2 h2 {
+  }
+  #block2 h2 {
+    color: #000000;
     width: 230px;
     height: 36px;
-    font-family: 'Fira Sans';
-    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 6px;
     margin: 0 auto;
     color: #4A4A4A;
     margin-top: 53px;
-}
-
-.cool img{
-    width:121px;
-    height:45px;
-    margin-top:40px;
-    margin-left:40px;
-}
-
-#block2 .cool{
-    width:1300px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:0 auto;
-}
-
-#block2 .but1 {
+  }
+  #block2 .cool {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  #block2 .but1 {
     width: 146px;
     height: 46px;
     border: 1px solid #4A4A4A;
     box-sizing: border-box;
-    background-color: white;
-    font-family: 'Open Sans';
-    font-weight: 800;
+    background-color: #ffffff;
     font-size: 14px;
     cursor: pointer;
-    margin-top:45px;
-}
-
-#block2 .blockText {
+    margin-top: 45px;
+  }
+  #block2 .blockText {
     margin: 111px 0 0 370px;
     font-family: 'Source Sans Pro';
     font-weight: 400;
@@ -234,183 +164,320 @@ h2 {
     color: #4A4A4A;
     width: 680px;
     height: 203px;
-}
-
-#block2 .blockText p{
-    padding-bottom:10px;
-}
-
-.peopleFlex {
-    width: 1440px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.peopleFlex div {
-    width: 341px;
-    position: relative;
-}
-
-.peopleFlex img {
-    margin: 0 auto;
-    display: block;
-}
-
-.peopleFlex div h3 {
-    text-align: center;
-    font-family: 'FiraSans';
-    margin: 10px 0 23px 0;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FF7E03;
-}
-
-.peopleFlex div p {
-    font-family: 'Source Sans Pro';
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
+  }
+  #block2 .blockText p {
+    padding-bottom: 10px;
+  }
+  #block2 button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);
+  }
+  #block4 h2 {
+    color: #000000;
+  }
+  #block4 .topFlex {
+    padding-top: 56px;
+  }
+  #block4 .topFlex h2 {
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 6px;
     color: #4A4A4A;
-}
-
-
-#block3 {
-    margin-top: 71px;
-    width: 1440px;
-    height: 794px;
-    background-image: url('../img/fon/bg2.jpg');
-}
-
-#block3 .topFlex h2 {
+  }
+  #block4 .topFlex p {
+    font-family: 'Source Sans Pro';
+    font-size: 19px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #4A4A4A;
+  }
+  #block4 button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 62px;
+    width: 186px;
+    height: 66px;
+    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    border: none;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 69px;
+  }
+  #block4 button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);
+  }
+  #block6 h2 {
+    color: #000000;
     font-family: 'Fira Sans';
     font-weight: 500;
     font-size: 36px;
     line-height: 36px;
     text-align: center;
     letter-spacing: 6px;
-
-}
-
-#block3 .topFlex {
+    text-transform: uppercase;
+    color: #4A4A4A;
+  }
+  #block6 .topFlex {
+    padding-top: 47px;
+    padding-bottom: 105px;
+  }
+  #block6 .topFlex .but1 {
+    width: 146px;
+    height: 46px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A4A4A;
+  }
+  #block6 p {
+    width: 940px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  #block6 .icons i {
+    color: #FF7E03;
+    padding-right: 10px;
+  }
+  #block6 .icons span {
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+  #block3 {
+    margin-top: 71px;
+    width: 1440px;
+    height: 794px;
+    background-image: url('../img/fon/bg2.jpg');
+  }
+  #block3 h2 {
+    color: #ffffff;
+  }
+  #block3 .topFlex {
     padding-top: 53px;
     padding-bottom: 88px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#block3 div img {
+  }
+  #block3 .topFlex h2 {
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 6px;
+  }
+  #block3 div img {
     width: 121px;
     height: 45px;
-}
-
-
-#block3 .but2 {
+  }
+  #block3 .but2 {
     width: 146px;
     height: 46px;
     border: 1px solid #ffffff;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0);
-    font-family: 'Open Sans';
-    font-weight: 800;
     font-size: 14px;
     cursor: pointer;
-    color: white;
-}
-
-#block3 .content {
+    color: #ffffff;
+  }
+  #block3 .content {
     width: 1108px;
     height: 504px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     box-sizing: border-box;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     position: relative;
-}
-
-#block3 .content div {
+  }
+  #block3 .content div {
     display: flex;
     flex-direction: column;
-}
-
-#block3 .content img {
+  }
+  #block3 .content img {
     width: 18px;
     height: 25px;
-}
-
-.flex1 p, .flex2 p {
+  }
+  #block3 button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);
+  }
+  #block5 {
+    width: 1440px;
+    height: 794px;
+    background-image: url('../img/fon/bg3.jpg');
+  }
+  #block5 h2 {
+    color: #ffffff;
+  }
+  #block5 button {
+    width: 186px;
+    height: 66px;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    margin: 0 auto;
+    display: block;
+    margin-top: 134px;
+  }
+  #block5 button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);
+  }
+  #block5 .topFlex {
+    padding-top: 58px;
+  }
+  #block5 .topFlex h2 {
     font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+  #block5 .topFlex p {
+    font-family: 'Source Sans Pro';
+    font-size: 19px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  #block5 .cooper {
+    margin: 0 auto;
+    margin-top: 132px;
+    width: 700px;
+    height: 125px;
+    font-family: 'Source Sans Pro';
+    font-size: 19px;
+    line-height: 24px;
+    text-align: justify;
+    color: #ffffff;
+  }
+  .logoTel {
+    width: 1065px;
+    height: 188px;
+    position: absolute;
+    top: 228px;
+    left: 188px;
+  }
+  .log1 img {
+    width: 94px;
+    height: 116px;
+  }
+  .log1 img ~ .log1 img {
+    width: 99px;
+    height: 114px;
+  }
+  .log1 p {
+    color: #ffffff;
+    font-family: 'Sourse Sans Pro';
+    width: 95px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .cool img {
+    width: 121px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  .peopleFlex {
+    width: 1440px;
+  }
+  .peopleFlex div {
+    width: 341px;
+    position: relative;
+  }
+  .peopleFlex div h3 {
+    text-align: center;
+    margin: 10px 0 23px 0;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FF7E03;
+  }
+  .peopleFlex div p {
+    font-family: 'Source Sans Pro';
     font-weight: 400;
     font-size: 17px;
+    line-height: 24px;
+    color: #4A4A4A;
+  }
+  .peopleFlex img {
+    margin: 0 auto;
+    display: block;
+  }
+  .flex1 p {
+    font-size: 17px;
     line-height: 20px;
-    color: #FFFFFF;
-}
-
-.flex1 h2 {
+    color: #ffffff;
+  }
+  .flex1 h2 {
     color: blue;
-}
-
-
-.flex1 .hOne {
+  }
+  .flex1 .hOne {
     position: absolute;
     top: 18px;
     left: 69px;
-    font-family: 'Fira Sans';
-    font-weight: 800;
     font-size: 48px;
     line-height: 58px;
-    color: #FFFFFF;
-}
-
-.flex1 .pOne {
+    color: #ffffff;
+  }
+  .flex1 .pOne {
     position: absolute;
     top: 109px;
     left: 71px;
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 17px;
     line-height: 20px;
-}
-
-.flex1 .hTwo {
+  }
+  .flex1 .hTwo {
     position: absolute;
     top: 134px;
     left: 72px;
     font-family: 'Fira Sans';
     font-weight: 700;
     font-size: 36px;
-}
-
-.flex1 .pTwo {
+  }
+  .flex1 .pTwo {
     position: absolute;
     top: 181px;
     left: 72px;
     font-family: 'Fira Sans';
     font-size: 17px;
     line-height: 20px;
-}
-
-.flex1 .pTwo img {
+  }
+  .flex1 .pTwo img {
     margin-right: 5px;
-}
-
-.flex1 .hThree {
+  }
+  .flex1 .hThree {
     position: absolute;
     top: 256px;
     left: 69px;
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 800;
     font-size: 48px;
     line-height: 58px;
-}
-
-.flex1 .pThree {
+  }
+  .flex1 .pThree {
     position: absolute;
     top: 344px;
     left: 69px;
@@ -418,49 +485,45 @@ h2 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 13.2778px;
-}
-
-.flex1 .pFour {
+  }
+  .flex1 .pFour {
     position: absolute;
     top: 362px;
     left: 69px;
     font-family: 'Source Sans Pro';
-    font-style: normal;
     font-weight: bold;
     font-size: 96px;
     line-height: 121px;
-}
-
-.flex2 .hOne {
+  }
+  .flex2 p {
+    font-size: 17px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  .flex2 .hOne {
     position: absolute;
     top: 18px;
     left: 611px;
-    font-family: 'Fira Sans';
-    font-style: normal;
-    font-weight: 800;
     font-size: 48px;
     line-height: 58px;
-}
-
-.flex2 .pOne {
+  }
+  .flex2 .pOne {
     position: absolute;
     top: 107px;
     left: 611px;
     font-family: 'Fira Sans';
     font-size: 17px;
     line-height: 24px;
-}
-
-.flex2 .pTwo {
+  }
+  .flex2 .pTwo {
     position: absolute;
     top: 140px;
     left: 611px;
     font-family: 'Fira Sans';
     font-size: 17px;
     line-height: 24px;
-}
-
-.flex2 .hTwo {
+  }
+  .flex2 .hTwo {
     position: absolute;
     top: 344px;
     left: 610px;
@@ -469,284 +532,70 @@ h2 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 17.7778px;
-}
-
-.flex2 .pThree {
+  }
+  .flex2 .pThree {
     position: absolute;
     top: 362px;
     left: 610px;
     font-family: 'Source Sans Pro';
-    font-style: normal;
     font-weight: bold;
     font-size: 96px;
     line-height: 121px;
-}
-
-#block4 .topFlex {
-    padding-top: 56px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#block4 .topFlex h2 {
+  }
+  .emoji {
+    width: 1200px;
+    margin-left: 100px;
+    margin-top: 54px;
+  }
+  .emoji h3 {
     font-family: 'Fira Sans';
     font-weight: 500;
-    font-size: 36px;
-    line-height: 36px;
-    letter-spacing: 6px;
-    color: #4A4A4A;
-}
-
-#block4 .topFlex p {
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+  }
+  .emoji p {
     font-family: 'Source Sans Pro';
     font-size: 19px;
-    line-height: 36px;
-    text-align: right;
-    text-transform: uppercase;
-    color: #4A4A4A;
-}
-
-#block4 button {
-    display: block;
-    margin: 0 auto;
-    margin-top: 62px;
-    width: 186px;
-    height: 66px;
-    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 16px;
+  }
+  .flexFoot {
+    margin-top: 114px;
+  }
+  .flexFoot button {
+    width: 206px;
+    height: 46px;
     border: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 17px;
-    line-height: 23px;
+    background-color: #FF7E03;
+    font-size: 14px;
+    line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
-    margin-bottom:69px;
-}
-
-#block4 button:hover, #block3 button:hover, #block2 button:hover, #block1 button:hover, #block5 button:hover{
-    color:white;
-    cursor:pointer;
-    background-image: linear-gradient(to right, #fc6f5c, #fe7854, #ff814d, #ff8b45, #fe953e, #fd983b, #fb9b39, #fa9e36, #fa9b37, #fb9838, #fb953a, #fb923b);
-}
-
-#block5{
-    width:1440px;
-    height:794px;
-    background-image: url('../img/fon/bg3.jpg');
-
-}
-
-#block5 .topFlex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 58px;
-}
-
-#block5 .topFlex h2{
-    font-family: 'Fira Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 36px;
-letter-spacing: 6px;
-text-transform: uppercase;
-}
-
-#block5 .topFlex p{
+    color: #ffffff;
+  }
+  .flexInfo {
+    margin: 0 auto;
+    width: 1440px;
+    margin-top: 141px;
+  }
+  .flexInfo p {
+    width: 100px;
+  }
+  .flexInfo .spans2 {
     font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 19px;
-line-height: 36px;
-text-align: right;
-text-transform: uppercase;
-color: #FFFFFF;
-}
-
-#block5 .cooper{
-    margin:0 auto;
-    margin-top:132px;
-    width:700px;
-    height:125px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    color: #FF7E03;
+  }
+  .spans1 {
     font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 19px;
-line-height: 24px;
-text-align: justify;
-color: #FFFFFF;
-}
-
-
-.emoji{
-    width:1200px;
-    margin-left:100px;
-    margin-top:54px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.emoji h3{
-    font-family: 'Fira Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 32px;
-line-height: 38px;
-color: #FFFFFF;
-}
-
-.emoji p{
-    font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 19px;
-line-height: 24px;
-text-decoration-line: underline;
-color: #FFFFFF;
-margin-left:30px;
-margin-top:16px;
-}
-
-#block5 button{
-    width:186px;
-    height:66px;
-    color:white;
-    border:none;
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 17px;
-line-height: 23px;
-text-align: center;
-text-transform: uppercase;
-color: #4A4A4A;
-margin:0 auto;
-display:block;
-margin-top:134px;
-}
-
-
-#block6 .topFlex{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding-top:47px;
-    padding-bottom:105px;
-}
-
-#block6 h2{
-    font-family: 'Fira Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 36px;
-text-align: center;
-letter-spacing: 6px;
-text-transform: uppercase;
-color: #4A4A4A;
-}
-
-#block6 .topFlex .but1{
-    width:146px;
-    height:46px;
-    background-color:white;
-    font-family: 'Open Sans';
-    border:1px solid black;
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 19px;
-text-align: center;
-text-transform: uppercase;
-color: #4A4A4A;
-}
-
-
-#block6 p{
-    width:940px;
-    padding-bottom:20px;
-    margin:0 auto;
-    font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 200;
-font-size: 16px;
-line-height: 24px;
-color: #000000;
-}
-
-
-#block6 .icons i{
-    color:#FF7E03;
-    padding-right:10px;
-}
-
-#block6 .icons span{
-    font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-vertical-align:middle;
-}
-
-
-.flexFoot button{
-    width:206px;
-    height:46px;
-    border:none;
-    background-color: #FF7E03;
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 19px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-}
-
-.flexFoot{
-    margin-top:114px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.flexInfo{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:0 auto;
-    width:1440px;
-    margin-top:141px;
-}
-
-.flexInfo p{
-width:100px;
-}
-
-.flexInfo .spans2{
-    font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 25px;
-text-align: right;
-
-color: #FF7E03;
-}
-
-.spans1{
-    font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 19px;
-color:black;
-}
+    font-size: 15px;
+    line-height: 19px;
+    color: black;
+  }
+  
